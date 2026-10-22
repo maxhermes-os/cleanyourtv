@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/PRESS.md"><img src="docs/card.jpg" alt="213 TV models · 63 brands · 24 languages · 445 KB launcher. Featured in TechCrunch, TechRadar, Tom's Guide, Mashable, Android Authority, XDA, FlatpanelsHD, It's FOSS, Phandroid, GIGAZINE, Xataka, WinFuture, Frandroid, Macitynet, Techaeris, TechPP and 67 more: 83 articles from 22 countries. Before: stock Google TV home with a sponsored ad. After: the Clean Your TV launcher." width="800"></a>
+  <a href="docs/PRESS.md"><img src="docs/card.jpg" alt="214 TV models · 63 brands · 24 languages · 445 KB launcher. Featured in TechCrunch, TechRadar, Tom's Guide, Mashable, Android Authority, XDA, FlatpanelsHD, It's FOSS, Phandroid, GIGAZINE, Xataka, WinFuture, Frandroid, Macitynet, Techaeris, TechPP and 67 more: 83 articles from 22 countries. Before: stock Google TV home with a sponsored ad. After: the Clean Your TV launcher." width="800"></a>
 </p>
 
 **The viral tweet:** [x.com/gathint/status/2111379569030939102](https://x.com/gathint/status/2111379569030939102)
@@ -99,7 +99,7 @@ Anything running **Android TV** or **Google TV**.
 
 Tested lists from contributors, one folder per model in [`examples/`](examples/):
 
-**TCL** 50 · **Xiaomi** 26 · **Sony** 23 · **Philips** 12 · **Hisense** 8 · **Skyworth** 8 · **Amazon Fire TV** 7 ·
+**TCL** 50 · **Xiaomi** 26 · **Sony** 23 · **Philips** 13 · **Hisense** 8 · **Skyworth** 8 · **Amazon Fire TV** 7 ·
 **Thomson** 4 · **Google** 3 · **Panasonic** 3 · **BenQ** 2 · **CHiQ** 2 · **FFalcon** 2 · **Haier** 2 · **Hitachi** 2 ·
 **Kalley** 2 · **Nokia** 2 · **NVIDIA Shield** 2 · **OnePlus** 2 · **onn** 2 · **Redmi** 2 · **Toshiba** 2 · **Vu** 2 ·
 AiPro2K · AIWA · Artel · Caxium · Cecotec · Challenger · Compac · Dialog · EKO · Freebox · Insignia Fire TV · JVC ·
@@ -186,6 +186,7 @@ Anker Nebula, BYINTEK, Epson, Gadnic, JMGO, Portronics, Stellamore, Wanbo and XG
 | Philips 65PUS8102/12 (TP Vision TPM171E, PH7M_EU_5596, MediaTek MT5891), Europe | Android TV 8.0 |
 | Philips 65PUS9435/12 (TP Vision TPM191E, PH9M_EA_5599, MediaTek MT5887), Germany | Android TV 12 |
 | Philips 75PUS8505/12 (TP Vision TPM191E, PH9M_EA_5599, MediaTek MT5887), Europe | Android TV 12 |
+| Philips Google TV TA5 (TPV, PH1M_WW_9972, MediaTek mt5896), Germany | Google TV 14 |
 | Philips Google TV TA7 (TPV, PH3M_AL_T32, MediaTek), Brazil | Google TV 14 |
 | Philips R8G Google TV (MOKA, whitefield, Realtek RTD2851F), US | Google TV 14 |
 | Philips Smart 4K TV (Skyworth, eleonas, MediaTek), India | Google TV 14 |
