@@ -1,0 +1,49 @@
+# Philips Google TV TA5 (TPV / TP Vision, board PH1M_WW_9972, MediaTek mt5896 "merak")
+# Google TV 14 (API 34), build UKN2.241117.001, ~2.85 GB RAM
+# ro.product.model=Philips Google TV TA5  ro.product.device=PH1M_WW_9972  ro.product.manufacturer=TPV
+#
+# Apply:   powershell -ExecutionPolicy Bypass -File tools\disable.ps1 -TvHost 192.168.68.115 examples\philips-google-tv-ta5\debloat.txt
+# Undo:    powershell -ExecutionPolicy Bypass -File tools\restore.ps1 -TvHost 192.168.68.115 examples\philips-google-tv-ta5\debloat.txt com.google.android.apps.tv.launcherx
+#
+# Kept on purpose:
+# - Ambilight & Hue (org.droidtv.ambisvc, ambiair, ambihuecommon, ambisuite, alhuewizard)
+# - Chromecast built-in (com.google.android.apps.mediashell, com.mediatek.dialservice)
+# - AirPlay (com.mediatek.AirplayAPK, com.mediatek.airplaydaemon, com.mediatek.partner.airplay_sys)
+# - Amazon Alexa (org.droidtv.amazonalexa) & Google Assistant / TTS (com.google.android.katniss, com.google.android.tts)
+# - Live TV & HDMI inputs (org.droidtv.playtv, com.mediatek.tis, com.mediatek.dtv.tvinput.dvbtuner, org.droidtv.hdmiservice)
+# - Audio & Calibration (org.droidtv.tv.playFiAudioService, org.droidtv.audiocalibration, org.droidtv.tv.tpvaudiomanager)
+# - Firmware Updates (org.droidtv.upgradeapp, com.mediatek.tv.systemupdater)
+
+# Batch 1: TP Vision / Philips & Samba TV Telemetry and Analytics
+org.droidtv.candeebug                     # TP Vision "DAC" analytics uploader
+org.droidtv.gel                           # TP Vision "GEL" metrics collector (runs inside candeebug process)
+org.droidtv.tv.frameworklogger            # Philips framework and reboot logger
+tv.samba.ssm                              # Samba TV ACR (Automatic Content Recognition screen tracking, Firebase + Mixpanel)
+com.google.android.feedback               # Google Market Feedback Agent
+com.google.android.partnersetup           # Google partner attribution / referrer
+com.google.android.onetimeinitializer     # First-time setup leftover
+org.droidtv.oemtabprovider                # "Philips" promotional tab on the Google TV home screen
+
+# Batch 2: Preinstalled Promo Apps, Operator Bloat & Storefront Extras
+com.tpv.nftgallery                        # TP Vision "NFT Collection" gallery app
+com.tpv.moments                           # Philips Moments promo app
+org.droidtv.whalefit                      # WhaleFit fitness promo app
+com.google.android.play.games             # Google Play Games
+org.droidtv.m7opapp                       # M7 satellite pay-TV operator promo
+org.droidtv.astrahdplus                   # HD+ satellite pay-TV operator app
+
+# Batch 3: Preinstalled 3rd-Party Bloat (Rakuten TV & Boosteroid)
+tv.wuaki.apptv                            # Rakuten TV
+com.boosteroidtv.streaming                # Boosteroid cloud gaming
+
+# Batch 4: Unused Smart-Home & Multi-Room Bridges (Control4 & DTS Play-Fi UI; Alexa & playFiAudioService kept)
+com.phorus.playfi.tv                      # DTS Play-Fi multi-room app
+com.phorus.playfi.softap                  # DTS Play-Fi SoftAP helper
+org.droidtv.control4app                   # Control4 home automation app
+org.droidtv.control4adapterservice        # Control4 UcAdaptor
+org.droidtv.control4sddp                  # Control4 SDDP discovery service
+org.droidtv.control4UcService             # Control4 UcService
+
+# Batch 5: Setup Wizard (NOTE: forget and re-join Wi-Fi in TV Settings > Network & Internet first so
+# cname=com.google.android.tungsten.setupwraith no longer owns the Wi-Fi network; disable.ps1 guards this automatically)
+com.google.android.tungsten.setupwraith
